@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "skipLibCheck": false,
+    "noEmit": true,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "allowJs": true,
+    "sourceMap": true,
+    "lib": ["es2015", "es5", "es2016", "es6", "dom"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "babelCore": "@babel/core"
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}
