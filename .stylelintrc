@@ -33,12 +33,6 @@
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "selector-combinator-space-after": "always",
-    "number-leading-zero": "always",
-    "order/order": [
-      [],
-      {
-        "disableFix": true
-      }
-    ]
+    "number-leading-zero": "always"
   }
 }
