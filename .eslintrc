@@ -37,7 +37,7 @@
     "max-len": [
       "error",
       {
-        "code": 150,
+        "code": 120,
         "ignoreRegExpLiterals": true
       }
     ],
@@ -92,7 +92,6 @@
     "import/order": "off",
     "simple-import-sort/sort": [
       "error",
-      // more info about custom sorting https://github.com/lydell/eslint-plugin-simple-import-sort/tree/d1d59be47b08733990a8a62f7caf735cdad420f9#custom-grouping
       {
         "groups": [
           // Node.js builtins. You could also generate this regex if you use a `.js` config.
