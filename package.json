@@ -88,7 +88,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn lint:ts && yarn lint:style && yarn typecheck && yarn unit-tests-clear && yarn unit-tests"
+      "pre-push": "yarn lint:ts && yarn lint:style && yarn typecheck"
     }
   },
   "lint-staged": {
