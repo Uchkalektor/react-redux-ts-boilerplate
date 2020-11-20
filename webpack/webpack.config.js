@@ -6,13 +6,14 @@ module.exports = {
 	devtool: 'eval',
 	entry: ['react-hot-loader/patch', path.join(__dirname, '../src/index.tsx')],
 	output: {
-		path: path.join(__dirname, '../dist'),
+		path: path.join(__dirname, '../static'),
 		filename: '[name].[hash].js',
+		sourceMapFilename: '[file].map',
 		publicPath: '/',
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new HtmlWebpackPlugin({ filename: path.join(__dirname, '../static/index.html'), inject: true }),
+		new HtmlWebpackPlugin({ template: path.join(__dirname, '../static/index.html'), inject: true }),
 	],
 	optimization: {
 		moduleIds: 'named',
@@ -25,6 +26,8 @@ module.exports = {
 	devServer: {
 		hot: true,
 		inline: true,
+		publicPath: '/',
+		port: 3000,
 	},
 	module: {
 		rules: [
